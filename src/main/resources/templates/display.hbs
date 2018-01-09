@@ -1,0 +1,16 @@
+{{#partial "content"}}
+
+    <h1>List of Kombucha:</h1>
+    {{#if allKombucha}}
+        {{#each allKombucha}}
+            <p>Name: {{name}}</p>
+            <p>Color: {{color}}</p>
+            <p>Taste: {{taste}}</p>
+            <p>Smell: {{smell}}</p>
+            <p>Price: {{price}}</p>
+        {{/each}}
+    {{/if}}
+
+{{/partial}}
+
+{{> layout.hbs}}

@@ -1,0 +1,25 @@
+{{#partial "content"}}
+
+<h1>Add Kombucha</h1>
+
+<form action="/new" method="POST">
+    <label for="name">Name of Kombucha</label>
+    <input id="name" name="name" type="text">
+
+    <label for="color">Color</label>
+    <input id="color" name="color" type="text">
+
+    <label for="taste">Taste</label>
+    <input id="taste" name="taste" type="text">
+
+    <label for="smell">Smell</label>
+    <input id="smell" name="smell" type="text">
+
+    <label for="price">Price</label>
+    <input id="price" name="price" type="number">
+
+    <button type="submit">Submit</button>
+</form>
+{{/partial}}
+
+{{> layout.hbs}}
